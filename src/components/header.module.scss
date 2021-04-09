@@ -1,3 +1,32 @@
-.link {
+.header{
+  padding: 1rem 0 3rem;
+}
+
+.title{
+  color: black;
+  font-size: 3rem;
+  text-decoration: none;
+
+}
+
+.navList{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navItem {
 	color: pink;
+  font-size: 2em;
+  margin-right: 5.3rem;
+  text-decoration: none; 
+  // remove underline look
+}
+
+.navItem:hover{
+  color: crimson;
+}
+
+.active-nav-item{
+  color: rebeccapurple;
 }
