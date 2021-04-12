@@ -21,6 +21,7 @@ module.exports = {
         name: 'src',
         path: `${__dirname}/src/` //comes from node.js
       }
-    }
+    },
+    'gatsby-transformer-remark'
   ],
 }
