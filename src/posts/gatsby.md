@@ -7,6 +7,8 @@ date: "2021"
 
 This is my first gatsby project
 
+![anime-boy](./anime-boy.jpeg)
+
 ## Topics in here
 
 1. Something
