@@ -1,5 +1,6 @@
 ---
 # can add key / value pairs here
+slug: "gatsby"
 title: "The Great Gatsby"
 date: "2021"
 ---
