@@ -9,9 +9,11 @@ const Blog = () => {
     allMarkdownRemark {
       edges {
         node {
+          id
           frontmatter {
             title
             date
+            slug
           }
         }
       }
@@ -25,9 +27,11 @@ const Blog = () => {
         {data.allMarkdownRemark.edges.map((edge) =>{
           return (
             // add a key prop to the list later
-            <li >
+            <li key={edge.node.id}>
+              <Link to={edge.node.frontmatter.slug}>
               <h2>{edge.node.frontmatter.title}</h2>
               <p>{edge.node.frontmatter.date}</p>
+              </Link>
             </li>
           )
         })}
