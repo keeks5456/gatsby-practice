@@ -24,7 +24,8 @@ const Blog = () => {
       <ol>
         {data.allMarkdownRemark.edges.map((edge) =>{
           return (
-            <li>
+            // add a key prop to the list later
+            <li >
               <h2>{edge.node.frontmatter.title}</h2>
               <p>{edge.node.frontmatter.date}</p>
             </li>
