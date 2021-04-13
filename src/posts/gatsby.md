@@ -1,10 +1,13 @@
 ---
 # can add key / value pairs here
+slug: "gatsby"
 title: "The Great Gatsby"
-data: "2021"
+date: "2021"
 ---
 
 This is my first gatsby project
+
+![anime-boy](./anime-boy.jpeg)
 
 ## Topics in here
 

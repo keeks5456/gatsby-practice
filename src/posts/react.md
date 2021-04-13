@@ -1,7 +1,8 @@
 ---
 # can add key / value pairs here
+slug: 'react'
 title: "React babyyyy"
-data: "2021 April 8th"
+date: "2021 April 8th"
 ---
 
 Something about react but I will change later
