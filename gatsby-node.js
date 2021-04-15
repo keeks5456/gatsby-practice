@@ -1,5 +1,9 @@
 //part one of how we will be adding a slug 
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV || 'development'}`
+})
+
 const path = require('path')
 
 module.exports.onCreateNode = ({node , actions}) => {
