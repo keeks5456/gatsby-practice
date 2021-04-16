@@ -6,31 +6,29 @@ require('dotenv').config({
 
 const path = require('path')
 
-module.exports.onCreateNode = ({node , actions}) => {
-  const {createNodeField} = actions
+// module.exports.onCreateNode = ({node , actions}) => {
+//   const {createNodeField} = actions
 
-  if(node.internal.type === 'MarkdownRemark'){
-    const slug = path.basename(node.fileAbsolutePath, '.md')
+//   if(node.internal.type === 'MarkdownRemark'){
+//     const slug = path.basename(node.fileAbsolutePath, '.md')
 
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug
-    })
-  }
-}
+//     createNodeField({
+//       node,
+//       name: 'slug',
+//       value: slug
+//     })
+//   }
+// }
 
 module.exports.createPages = async ({graphql, actions, reporter}) =>{
   const {createPage} = actions
   const blogTemplate = path.resolve('./src/templates/blog.js') 
   const response = await graphql(`
     query{
-      allMarkdownRemark {
+      allContentfulBlogPost {
         edges {
           node {
-            frontmatter {
               slug
-            }
           }
         }
       }
@@ -42,12 +40,12 @@ module.exports.createPages = async ({graphql, actions, reporter}) =>{
     return
   }
 
-    response.data.allMarkdownRemark.edges.forEach(({node}) => {
+    response.data.allContentfulBlogPost.edges.forEach(({node}) => {
       createPage({
         component: blogTemplate,
-        path: `/blog/${node.frontmatter.slug}`,
+        path: `/blog/${node.slug}`,
         context: {
-          slug: node.frontmatter.slug
+          slug: node.slug
         }
       })
     })
