@@ -18,7 +18,7 @@ const path = require('path')
 //       value: slug
 //     })
 //   }
-// }
+// } manually create slugs
 
 module.exports.createPages = async ({graphql, actions, reporter}) =>{
   const {createPage} = actions
@@ -49,9 +49,5 @@ module.exports.createPages = async ({graphql, actions, reporter}) =>{
         }
       })
     })
-  
-    //get path to template
-    //get markdown data
-    //create new page
 
 }
