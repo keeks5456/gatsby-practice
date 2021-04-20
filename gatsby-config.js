@@ -20,6 +20,7 @@ module.exports = {
     author: 'Akiko Green'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {
@@ -35,6 +36,7 @@ module.exports = {
         path: `${__dirname}/src/` //comes from node.js
       }
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-transformer-remark',
