@@ -20,6 +20,7 @@ module.exports = {
     author: 'Akiko Green'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {
