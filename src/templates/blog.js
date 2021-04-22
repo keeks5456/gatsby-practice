@@ -11,16 +11,14 @@ export const query = graphql`
 query ($slug: String!) {
   contentfulBlogPost(slug: { eq: $slug } ) {
     title
+    image {
+      file {
+        url
+      }
+    }
     publishedDate(formatString: "MMMM Do YYYY")
     body {
       raw
-      references {
-        contentful_id
-        title 
-        file {
-          url
-        }
-      }
     }
   }
 }
@@ -28,38 +26,29 @@ query ($slug: String!) {
 
 
 const Blog = (props) => {
+
   // const options = {
   //   renderNode: {
-  //     "embeded-asset-block": (node) => {
-  //       const alt = node.data.fields.title('en-US')
-  //       const url = node.data.target.fields.file('en-US').url
-  //       return <img alt={alt} url={url} />
+  //     [BLOCKS.EMBEDDED_ASSET]: node => {
+  //       const imageId = node.data.target.sys.id
+  //       console.log(node.data)
+  //       const {
+  //         file: {url}, 
+  //         title
+  //      } = props.data.contentfulBlogPost.image.find(({contentful_id: id}) => id === imageId);
+  //       return <img alt={title} src={url} />
   //     }
   //   }
   // }
-
-  const options = {
-    renderNode: {
-      [BLOCKS.EMBEDDED_ASSET]: node => {
-        console.log(node)
-        const imageId = node.data.target.sys.id
-        const {
-          file: {url}, 
-          title
-       } = props.data.contentfulBlogPost.body.references.find(({contentful_id: id}) => id === imageId);
-        // const alt = node.data.fields.title('en-US')
-        // const url = node.data.target.fields.file('en-US').url
-        return <img alt={title} src={url} />
-      }
-    }
-  }
-
+  
+console.log(props.data)
   return (
     <Layout>
       <Head title={props.data.contentfulBlogPost.title}/>
+      <img src={props.data.contentfulBlogPost.image[0].file.url} alt="yur mom"></img>
       <h1>{props.data.contentfulBlogPost.title}</h1>
       <p>{props.data.contentfulBlogPost.publishedDate}</p>
-      {documentToReactComponents(JSON.parse(props.data.contentfulBlogPost.body.raw, options))}
+      {documentToReactComponents(JSON.parse(props.data.contentfulBlogPost.body.raw))}
     </Layout>
   );
 };
