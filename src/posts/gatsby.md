@@ -3,6 +3,7 @@
 slug: "gatsby"
 title: "The Great Gatsby"
 date: "2021"
+image: "![anime-boy](./anime-boy.jpeg)"
 ---
 
 This is my first gatsby project
