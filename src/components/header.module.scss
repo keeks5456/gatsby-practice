@@ -1,5 +1,6 @@
 .header{
   padding: 1rem 0 3rem;
+  background: lightgray;
 }
 
 .title{
@@ -10,13 +11,14 @@
 }
 
 .navList{
+  float: right;
   display: flex;
   list-style-type: none;
   margin: 0;
 }
 
 .navItem {
-	color: pink;
+	color: white;
   font-size: 2em;
   margin-right: 5.3rem;
   text-decoration: none; 
@@ -24,9 +26,9 @@
 }
 
 .navItem:hover{
-  color: crimson;
+  color: black;
 }
 
 .active-nav-item{
-  color: rebeccapurple;
+  color: black;
 }

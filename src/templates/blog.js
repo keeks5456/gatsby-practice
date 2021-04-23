@@ -29,8 +29,8 @@ console.log(props.data)
 // debugger
   return (
     <Layout>
-      <img src={props.data.contentfulBlogPost.img.file.url} alt="yur mom"></img>
       <Head title={props.data.contentfulBlogPost.title}/>
+      <img src={props.data.contentfulBlogPost.img.file.url} alt="yur mom"></img>
       {/* <h1>{props.data.contentfulBlogPost.title}</h1> */}
       {documentToReactComponents(JSON.parse(props.data.contentfulBlogPost.body.raw))}
       <p>{props.data.contentfulBlogPost.publishedDate}</p>
