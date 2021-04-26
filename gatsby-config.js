@@ -20,6 +20,7 @@ module.exports = {
     author: 'Akiko Green'
   },
   plugins: [
+    `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',

@@ -13,7 +13,7 @@ const About = () => {
       }
     }
   }
-`) //tagged template literal
+`)
   return (
     <Layout>
       <Head title="About"/>
