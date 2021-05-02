@@ -18,7 +18,8 @@ const About = () => {
     <Layout>
       <Head title="About"/>
       <h1>{data.site.siteMetadata.author}</h1>
-      <p>This is a component about meeee</p>
+      <h2>Hello & Welcome!</h2>
+      <p>My love for all things anime started when I was a young girl. My first anime I fell in love with was <b>Inuyasha... or dotHackSign.</b></p>
       <Link to="/contact">Contact me here</Link>
     </Layout>
 

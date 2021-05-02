@@ -7,7 +7,7 @@
  *'Bx42tZre-NDhCr3RkxU7Quiz-2w0Z3uHO6gNYbGVwu4'
  */
 
- require('dotenv').config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV || 'development'}`
 })
 
@@ -34,11 +34,25 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
-        path: `${__dirname}/src/` //comes from node.js
+        path: (`${__dirname}/src/`)//comes from node.js
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/posts`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        checkSupportedExtensions: false,
+      }
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -46,9 +60,15 @@ module.exports = {
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-images',
-            options:{
-              maxWidth: 800,
+            options: {
+              maxWidth: 300,
               linkImagesToOriginal: false
+            }
+          },
+          {
+            resolve: `gatsby-remark-images-contentful`,
+            options: {
+              maxWidth: 400
             }
           }
         ]
