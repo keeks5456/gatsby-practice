@@ -10,6 +10,8 @@ const Contact = () => {
 			<Head title="Contacts" />
 			<h1>Hello There! </h1>
 			<p>The best way to get in touch with Akiko is through these apps below :)</p>
+      <br />
+      <p>If you have any questions anime or software engineer related, please feel free to connect with me on social media! :)</p>
 			<ul>
 				{/* replace the text with icons */}
 				<li>
