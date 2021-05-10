@@ -12,7 +12,7 @@ const IndexPage = () => {
 				<div>
 				<h1>Wiki-Anime</h1>
 					<p>
-            Welcome! Wiki-Anime is a personal blogging site, created to display information about My favorite anime shows & Movies
+            Welcome! Wiki-Anime is a personal blogging site, created to display information about My favorite anime shows & Movies, giving you my hot takes on the overall story, the character development and how that anime impacted me in someway.
 						{/* standard way of linking  */}
 						{/* <a href="/contact">Contacts</a> */}
 					</p>
