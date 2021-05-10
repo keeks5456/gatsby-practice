@@ -8,6 +8,7 @@ const NotFound = () => {
     <Layout>
       <Head title="404"/>
       <h1>Page Not Found</h1>
+      <h4>Please head back to the Home Page</h4>
       <p><Link to="/">Head Home</Link></p>
     </Layout>
   );
