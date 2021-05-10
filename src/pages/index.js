@@ -10,9 +10,9 @@ const IndexPage = () => {
       <Head title="Home"/>
 			<div>
 				<div>
-				<h1>Wiki-Anime </h1>
+				<h1>Wiki-Anime</h1>
 					<p>
-            Welcome! 
+            Welcome! Wiki-Anime is a personal blogging site, created to display information about My favorite anime shows & Movies
 						{/* standard way of linking  */}
 						{/* <a href="/contact">Contacts</a> */}
 					</p>
