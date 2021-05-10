@@ -10,15 +10,15 @@ const IndexPage = () => {
       <Head title="Home"/>
 			<div>
 				<div>
-					Hallo From Index Page Component
+				<h1>Wiki-Anime </h1>
 					<p>
-						need a dev? Contact meee here
+            Welcome! 
 						{/* standard way of linking  */}
 						{/* <a href="/contact">Contacts</a> */}
 					</p>
 					{/* Link has better UI, real time refresh */}
 					<p>
-						Nev a dev <Link to="/contact">Contact me.</Link>
+						Want to get in touch with me to talk about your favorite anime <Link to="/contact">Contact me.</Link>
 					</p>
 				</div>
 			</div>
