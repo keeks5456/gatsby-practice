@@ -1,11 +1,20 @@
 .container {
   margin: 0 auto;
-  // max-width: 750px;
-  // padding: 1rem;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: radial-gradient(circle at 100%, lightgrey, #333 50%, #eee 75%, #333 75%);  background-repeat: no-repeat;
+
+  h1,
+  h2,
+  h5,
+  i,
+  h6,
+  h4,
+  p {
+    color: whitesmoke;
+  }
+
 }
 
 .content{

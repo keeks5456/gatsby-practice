@@ -10,6 +10,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 article,
 aside,
@@ -214,15 +215,12 @@ body {
 }
 img {
   display: block;
-  /* justify-content: center; */
-  max-width: 50%;
+  width: 350px;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  /* padding-bottom: 0; */
-  /* padding-left: 0; */
-  /* padding-right: 0; */
-  /* padding-top: 0; */
+  border-radius: 22px;
   margin-bottom: 1.45rem;
 }
 h1 {
