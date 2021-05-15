@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import Head from '../components/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMedium, faTwitter, faLinkedin, faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
+import * as contactStyles from './contact.module.scss'
 const Contact = () => {
 	return (
 		<Layout>
@@ -12,11 +13,10 @@ const Contact = () => {
 			<p>The best way to get in touch with Akiko is through these apps below :)</p>
       <br />
       <p>If you have any questions anime or software engineer related, please feel free to connect with me on social media! :)</p>
-			<ul>
+			<ul className={contactStyles.contact}>
 				{/* replace the text with icons */}
 				<li>
-					<a href="https://www.linkedin.com/in/agreen08/">
-						Linkedin <FontAwesomeIcon icon={faLinkedin} />
+					<a href="https://www.linkedin.com/in/agreen08/"> <FontAwesomeIcon icon={faLinkedin} />
 					</a>
 				</li>
 				<li>
