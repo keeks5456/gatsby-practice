@@ -1,6 +1,6 @@
 .header{
-  padding: 1rem 0 3rem;
-  background: midnightblue;
+  padding: 0.2rem 0 1rem;
+  background: lightslategray;
 }
 
 .title{
@@ -11,10 +11,10 @@
 }
 
 .navList{
-  float: right;
   display: flex;
+  justify-content: center;
   list-style-type: none;
-  margin: 0;
+  margin-top: 40px;
 }
 
 .navItem {

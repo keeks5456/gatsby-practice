@@ -1,0 +1,30 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 40px;
+ li {
+  color: white;
+  font-size: 2em;
+  margin-right: 5.3rem;
+  // text-decoration: none; 
+  // remove underline look
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ a:hover{
+   color: white;
+ }
+}
+
+
+// .contactItem:hover{
+//   color: black;
+// }
+
+// .active-nav-item{
+//   color: black;
+// }

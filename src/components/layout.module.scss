@@ -1,11 +1,31 @@
 .container {
   margin: 0 auto;
-  // max-width: 750px;
-  // padding: 1rem;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  // background: radial-gradient(circle at 75%, lightblue, lightgrey 45%, lightblue 75%, lightgrey 75%);  
+  background: radial-gradient(circle at 50%, darkgrey 50%, lightblue 75%, darkgrey 85%); 
+  background-repeat: no-repeat;
+
+  h1,
+  h2,
+  h5,
+  i,
+  h6,
+  h4,
+  p {
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+    padding: auto;
+    line-height: normal;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
 }
 
 .content{

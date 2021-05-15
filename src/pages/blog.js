@@ -40,7 +40,7 @@ const Blog = () => {
           )
         })}
       </ol>
-      <Link to="/about">Back to about</Link>
+      <Link to="/about">Back to Home</Link>
     </Layout>
   );
 };
